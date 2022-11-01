@@ -1,0 +1,29 @@
+ALGORITHM Sentence
+VAR
+   c: CHAR:="";
+   str: STRING:="";
+   l:INTEGER:=0;
+   i:INTEGER:=0;
+   voyel: INTEGER:=0; 
+   words:INTEGER:=0;
+   j: INTEGER:=0;
+   
+BEGIN
+ WHILE (c <> ".") DO
+ write("Give a caracter");
+ read(c);
+ str=str+c;
+ l=l+1;
+ IF (c="a"or c="A" or c="e" or c="E" and c="i" or c="I" and c="u" or c="U" and c="o" or c="O")
+    voyel=voyel+1;
+ END IF
+  IF(c = " ")
+    words=words+1;
+    END IF
+END WHILE
+ write("Number of words:" , words)
+ write("Number of voyels", voyel)
+
+END
+  
+ 
